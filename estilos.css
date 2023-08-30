@@ -1,4 +1,6 @@
-/*Reset de Estilos */
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,27 +9,22 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans";
     background-color: rgb(83, 116, 103);
 }
 
 
 header {
-    background-color: rgb(102, 187, 154);
-    color: #39806e;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-header {
     background-color: #174e3a;
-    color: #fff;
+    color: #fff6f6;
     text-align: center;
     padding: 20px;
- }
+}
+
+header h1 {
+  margin: 10px;
+}
+
 
 nav ul {
     list-style: none;
@@ -39,7 +36,7 @@ nav li {
 nav a {
     text-decoration: none;
     font-weight: bold;
-    color: #fff;
+    color: #f8eeee;
 }
   main { 
     padding: 20px;
@@ -48,13 +45,14 @@ nav a {
 
   .card {
     width: calc(33.33% - 20px);
-    height: 500px;
+    height: 440px;
     margin: 10px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #879e95;
     box-shadow: 0 2px 4px rgba(24, 109, 83, 0.623);
     text-align: center;
     float: left;
+    border-radius: 23px 23px;
   }
 
   .card img {
@@ -64,21 +62,44 @@ nav a {
 
   .card button { 
     background-color: #174e;
-    color: #fff;
+    color: #f7f2f2;
     border: none;
     padding: 8px 16px;
     margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 15px 15px;
   }
 
   .card button:hover {
-    background-color: #555555;
+    background-color: #4dac52;
   }
 
    footer {
     background-color: rgba(31, 68, 57, 0.986);
-    color: #fff;
+    color: #fffbfb;
     text-align: center;
     padding: 1rem;
    }
+
+   nav ul li  { 
+    padding: 8px 10px;
+    transition: all 1s ease;
+   }
+
+   nav ul li:hover {
+    background-color: #668373;
+    border-radius: 15px 15px;
+   }
+
+   /* Design Responsivo */
+   @media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+   @media screen and (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
